@@ -42,7 +42,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/?limit=50")
                         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png" alt="${pokemon.name}">
                         <h2>${pokemon.name}</h2>
                         <p>Prix: ${price} €</p>
-                        <a href="../produit/produit.html">
+                        <a href="produit/produit.html">
                             <button>Détails</button>
                         </a>
                         <button class="AjouterPanier">Ajouter au panier</button>
