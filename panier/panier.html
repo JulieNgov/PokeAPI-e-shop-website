@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pokemon e-commerce - Panier</title>
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="panier.css">
+    <script src="https://kit.fontawesome.com/d46d8a5065.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="panier-container">
+        <a type="button" class="nav-item theme" id="theme-toggle"><i class="fa-solid fa-toggle-on"></i></a>
+        <menu>
+            <a href="../accueil/index.html"><img src="../pokeapi.png" alt="logo"></a>
+            <ul>
+                <li><a href="../accueil/index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </menu>
+
+        <div class="panier">
+            <ul id="PokemonToBuy">
+                <h2>Mon panier</h2>
+                <div class="btns">
+                    <button id="btn-suppAll">Clear</button>
+                    <button id="btn-supprimer">Supprimer</button>
+                    <button id="btn-filtrer">Filtrer</button>
+                </div>
+            </ul>
+
+            <div class="total">
+                <h2>Total</h2>
+                <p>Nombre de pokémons : <span id="total"></span></p>
+                <p>Prix total : <span><span id="totalPrice"></span> €</span></p>
+                <ul id="totalList">
+                </ul>
+                <p id="livraison">Livraison estimée : <span id="jours-livraison"></span></p>
+                <button id="buy">Acheter</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>© 2021 PokéAPI Inc. Pokémon and Pokémon character names are trademarks of Nintendo.</p>
+            <p>Website by : @JulieNgov</p>
+        </div>
+    </footer>
+
+    <script src="panier.js"></script>
+</body>
+</html>

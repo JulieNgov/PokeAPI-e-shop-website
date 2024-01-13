@@ -1,0 +1,94 @@
+@import "../colors.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.produit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.produit-container > p {
+    position: absolute;
+    top: 70px;
+}
+
+#img-produit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#img-produit img {
+    width: 50%;
+    height: 200px;
+}
+
+#details-container {
+    padding-inline: 30px;
+    padding-top: 15px;
+    border-top: 1px solid var(--black);
+}
+
+.details h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.details p {
+    margin-bottom: 20px;
+}
+
+.details button {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.details button:hover {
+    background-color: white;
+    color: black;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.bounce {
+    animation: bounce 0.5s;
+}
+
+@media(max-width:1030px) {
+    .produit-container {
+        width: 80%;
+    }
+
+    menu img {
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width:530px) {
+    .produit-container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon e-commerce - Accueil</title>
+    <link rel="stylesheet" href="accueil.css">
+    <link rel="stylesheet" href="../menu.css">
+    <script src="https://kit.fontawesome.com/d46d8a5065.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Accueil -->
+    <a type="button" class="nav-item theme" id="theme-toggle"><i class="fa-solid fa-toggle-on"></i></a>
+    <menu>
+        <a href="index.html"><img src="../pokeapi.png" alt="logo"></a>
+        <ul>
+            <button id="AjoutPanier"><i class="fa-solid fa-plus"></i></button>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="../panier/panier.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </menu>
+
+    <main>
+        <img src="../pokeapi.png" alt="logo">
+        <div class="search">
+            <input type="text" placeholder="Nom ou type du pokémon" id="searchInput">
+            <button id="searchButton">Rechercher</button>
+                <select name="types" id="type-select">
+                    <option value="all">Types</option>
+                    <option value="grass">Grass</option>
+                    <option value="poison">Poison</option>
+                    <option value="fire">Fire</option>
+                    <option value="flying">Flying</option>
+                    <option value="water">Water</option>
+                    <option value="bug">Bug</option>
+                    <option value="normal">Normal</option>
+                    <option value="electric">Electric</option>
+                    <option value="ground">Ground</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="steel">Steel</option>
+                    <option value="ice">Ice</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="dark">Dark</option>
+                  </select>
+        </div>
+        <h2>Commandez vos pokémons de manière simple et rapide</h2>
+    </main>
+
+
+    <div class="card-container" id="card-container">
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>© 2021 PokéAPI Inc. Pokémon and Pokémon character names are trademarks of Nintendo.</p>
+            <p>Website by : @JulieNgov</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

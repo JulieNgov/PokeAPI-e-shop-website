@@ -1,0 +1,11 @@
+:root {
+    --bg-color: rgb(6, 17, 54);
+    --black: black;
+    --white: rgb(255, 255, 255);
+}
+
+.light-theme {
+    --bg-color: #efefef;
+    --black: white;
+    --white: black;
+  }
